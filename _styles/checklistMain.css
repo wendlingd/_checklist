@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/* ------------- preliminaries --------------- */
+
+body {
+	font: .9em Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+
+/* ------------- primary positioning blocks --------------- */
+
+#header {
+	border-bottom: 1px solid #7f7f7f;
+	background-color: #fff;
+/*	background-image: url(../_images/logo.png);*/
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+#header aside {
+	position: absolute;
+	right:6px;
+	top:6px;
+	/*font-size:70%;*/
+	width: 28em;
+	text-align: right;
+	margin: 2px 0 6px 0;
+	padding: 0;
+}
+
+#header aside h2 {
+	position: absolute;
+	left: -2000em;
+}
+#header #hgroup {
+	margin-left: 8em;	
+}
+
+#header #hgroup h2 {
+	position: absolute;
+	left: -2000em;
+}
+
+#siteNav h2, #siteNav #menuToggle {
+	display: none;
+}
+
+#siteNav ul {
+	list-style: none outside none;
+	line-height: 1.5;
+	text-decoration: none;
+}
+
+#siteNav a {
+	text-decoration: none;
+}
+
+
+#footer {
+	margin-top:2em;
+	border-top: 1px solid #7f7f7f;
+}
+
+
+
+
+/* ------------- presentation styles --------------- */
+
+a#skip-navigation, a#skip-navigation:hover, a#skip-navigation:visited {
+	position: absolute;
+	left: -2000em;
+}
+
+/*header*/
+
+#header #skipLinks {
+	position: absolute;
+	right: 25em;
+	font-size: 80%;
+	top: 2px;
+}
+#header #skipLinks ul {
+	margin: 0px;
+	padding: 0px;
+}
+#header #skipLinks li {
+	display: inline;
+	margin: 0px;
+	padding-left: .5em;
+}
+#header #skipLinks a {
+	color: #E8EDFF;
+}
+
+#header h1 {
+	font-size: 1.25em;
+	/*left: -2000em;*/
+}
+
+#header h1 span {
+	position: absolute;
+	left: -2000em;
+}
+
+
+/*nav styles*/
+#siteNav {
+	width: 100%;
+}
+#siteNav li {
+	float: left;
+}
+#siteNav a, #siteNav h3 {
+	display: block;
+	color: rgb(76, 67, 65);
+	border: none;
+}
+#siteNav a:hover {
+	color: rgb(123, 121, 143);
+	text-decoration:underline;
+}
+
+#siteNav a.current {
+	color: rgb(123, 121, 143);
+	cursor: default;
+	text-decoration:none;
+}
+
+label {
+	font-weight: bold;
+}
+
+.rating ul {
+	margin-top:0;
+	margin-bottom:4px;
+	padding-top:0;
+}
+
+.rating li {
+	list-style: none outside none;
+}
+
+
+
+/*mainContent*/
+
+#mainContent table th td {
+/*	font-size:.9em;*/
+	text-align: left;
+	border: thin solid #999;
+	padding: 4px;
+	word-wrap: break-word;
+	max-width:450px;
+	vertical-align: top;
+}
+
+#mainContent li {
+	margin-left: 1em;
+}
+
+
+
+/*footer*/
+
+#footer {
+	font-size:.6em;
+}

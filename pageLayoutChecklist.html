@@ -1,0 +1,290 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page layout checklist EXPERIMENT</title>
+<link href="_styles/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="_styles/fluidGrid.css" rel="stylesheet" type="text/css">
+<link href="_styles/checklistMain.css" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="_scripts/respond.min.js"></script>
+<script language=javascript type=text/javascript>
+<!-- 
+displayText = ""
+textMagic = new Array
+textMagicFlag = new Array
+textMagic[1] = "We're rejecting this job because it did not pass the checklist at (url). Please correct all items before resubmitting; contact us by email if you would like assistance."
+textMagic[2] = "6.1 Create pages that are not considered cluttered by users. More info: (url)."
+textMagic[3] = "6.2 Put important, clickable items in the same locations, and closer to the top of the page, where their location can be better estimated. More info: (url)."
+textMagic[4] = "6.3 Put the most important items at the top Page Layout center of the Web page to facilitate users' finding the information. More info: (url)."
+textMagic[5] = "6.4 Structure pages so that items can be easily compared when users must analyze those items to discern similarities, differences, trends, and relationships. More info: (url)."
+textMagic[6] = "6.5 Establish a high-to-low level of importance for information and infuse this approach throughout each page on the Web site. More info: (url)."
+textMagic[7] = "6.6 To facilitate finding target information on a page, create pages that are not too crowded with items of information. More info: (url)."
+textMagic[8] = "6.7 Visually align page elements, either vertically or horizontally. More info: (url)."
+textMagic[9] = "6.8 Use a fluid layout that automatically adjusts the page size to monitor resolution settings that are 1024x768 pixels or higher. More info: (url)."
+textMagic[10] = "6.9 Ensure that the location of headings and other page elements does not create the illusion that users have reached the top or bottom of a page when they have not. More info: (url)."
+textMagic[11] = "6.10 Make page-length decisions that support the primary use of the Web page. More info: (url)."
+textMagic[12] = "6.11 Limit the amount of white space (areas Page Layout without text, graphics, etc.) on pages that are used for scanning and searching. More info: (url)."
+textMagic[13] = "6.12 If reading speed is most important, use longer line lengths (75-100 characters per line). If acceptance of the Web site is most important, use shorter line lengths (fifty characters per line). More info: (url)."
+textMagic[14] = "6.13 Use frames when certain functions must remain visible on the screen as the user accesses other information on the site. More info: (url)."
+textMagicFlag[1] = 0
+textMagicFlag[2] = 0
+textMagicFlag[3] = 0
+textMagicFlag[4] = 0
+textMagicFlag[5] = 0
+textMagicFlag[6] = 0
+textMagicFlag[7] = 0
+textMagicFlag[8] = 0
+textMagicFlag[9] = 0
+textMagicFlag[10] = 0
+textMagicFlag[11] = 0
+textMagicFlag[12] = 0
+textMagicFlag[13] = 0
+textMagicFlag[14] = 0
+function showInfo(thisResponse)
+{
+if (textMagicFlag[thisResponse] == 0)
+{
+displayText = displayText + textMagic[thisResponse] + "\n\n"
+document.rbg06.adviceText.value = displayText
+textMagicFlag[thisResponse] = 1
+}
+else
+{
+tempText = new Array
+tempText = displayText.split("\n")
+displayText = ""
+for(i=0; i < tempText.length; i++)
+{
+if ((tempText[i] != textMagic[thisResponse]) && (tempText[i] > " "))
+{
+displayText = displayText + tempText[i] + "\n"
+}
+}
+document.rbg06.adviceText.value = displayText
+textMagicFlag[thisResponse] = 0
+}
+}
+//-->
+</script>
+
+</head>
+
+
+<body>
+
+<div class="gridContainer clearfix">
+  <div id="header">
+    <p><a href="index.html">Home</a></p>
+    <h1>Evaluating page layout</h1>
+    
+    <p>How can we improve the chances that our web pages will be structured for ease of comprehension? Let's try an <strong>interactive checklist</strong> that helps evaluators with testing and advice-giving. Source: Chapter 6, Page Layout, at <a href="https://guidelines.usability.gov">https://guidelines.usability.gov</a></p>
+    
+    <noscript>This form requires JavaScript, which is available in all of our approved browsers.</noscript>
+    
+  </div>
+  
+  <form name="rbg06">
+    <div id="punchList">
+      <p class="checkbox">
+        <input id="msgStarter" onclick="showInfo('1')" type="checkbox" name="msgStarter">
+        <label for="msgStarter">If you need to reject this submission, click this for the message header.</label>
+      </p>
+      <p class="checkbox">
+        <input id="6_1" onclick="showInfo('2')" type="checkbox" name="6_1">
+        <label for="6_1">6:1 Are displays uncluttered? Are all important search targets clearly available? Would users consider them cluttered?</label>
+      </p>
+      <noscript>On fail: </noscript>
+      
+      <ul class="rating">
+        <li>Relative importance: 5</li>
+        <li>Strength of evidence: 3</li>
+      </ul>
+
+
+      <p class="checkbox">
+        <input id="6_2" onclick="showInfo('3')" type="checkbox" name="6_2">
+        <label for="6_2">6:2 Are important, clickable items in the same locations close to the top of the page, so experienced users can begin moving their mouse to the area of the target before their eye detects the target?</label>
+      </p>
+
+      <noscript>On fail: 6.2 Put important, clickable items in the same locations, and closer to the top of the page, where their location can be better estimated.</noscript>
+      
+      <ul class="rating">
+        <li>Relative importance: 5</li>
+        <li>Strength of evidence: 4</li>
+      </ul>
+
+
+      <p class="checkbox">
+        <input id="6_3" onclick="showInfo('4')" type="checkbox" name="6_3">
+        <label for="6_3">6:3 Are the most important content and navigation options placed at the top center of pages?</label>
+      </p>
+
+      <noscript>On fail: 6.3 Put the most important items at the top Page Layout center of the Web page to facilitate users' finding the information.</noscript>
+      
+      <ul class="rating">
+        <li>Relative importance: 5</li>
+        <li>Strength of evidence: 4</li>
+      </ul>
+
+
+      <p class="checkbox">
+        <input id="6_4" onclick="showInfo('5')" type="checkbox" name="6_4">
+        <label for="6_4">6:4 Are pages structured so items can be easily compared, when users must analyze them to discern similarities, differences, trends, and relationships?</label>
+      </p>
+
+      <noscript>On fail: 6.4 Structure pages so that items can be easily compared when users must analyze those items to discern similarities, differences, trends, and relationships.</noscript>
+      
+      <ul class="rating">
+        <li>Relative importance: 4</li>
+        <li>Strength of evidence: 4</li>
+      </ul>
+
+
+      <p class="checkbox">
+        <input id="6_5" onclick="showInfo('6')" type="checkbox" name="6_5">
+        <label for="6_5">6:5 Does the page layout establish a high-to-low level of importance of information?</label>
+      </p>
+
+      <noscript>On fail: 6.5 Establish a high-to-low level of importance for information and infuse this approach throughout each page on the Web site.</noscript>
+      
+      <ul class="rating">
+        <li>Relative importance: 4</li>
+        <li>Strength of evidence: 3</li>
+      </ul>
+
+
+      <p class="checkbox">
+        <input id="6_6" onclick="showInfo('7')" type="checkbox" name="6_6">
+        <label for="6_6">6:6 Has the display density been optimized so users can find target information in a 'sparse' field rather than a 'crowded' field of vision? Targets in sparse areas of the display tend to be searched earlier.</label>
+      </p>
+
+      <noscript>On fail: 6.6 To facilitate finding target information on a page, create pages that are not too crowded with items of information.</noscript>
+      
+      <ul class="rating">
+        <li>Relative importance: 4</li>
+        <li>Strength of evidence: 3</li>
+      </ul>
+
+
+      <p class="checkbox">
+        <input id="6_7" onclick="showInfo('8')" type="checkbox" name="6_7">
+        <label for="6_7">6:7 Are items such as text blocks, rows, columns, checkboxes, radio buttons, data entry fields, etc., consistently visually aligned, vertically or horizontally?</label>
+      </p>
+
+      <noscript>On fail: 6.7 Visually align page elements, either vertically or horizontally.</noscript>
+      
+      <ul class="rating">
+        <li>Relative importance: 4</li>
+        <li>Strength of evidence: 5</li>
+      </ul>
+
+
+      <p class="checkbox">
+        <input id="6_8" onclick="showInfo('9')" type="checkbox" name="6_8">
+        <label for="6_8">6:8 Do pages use a fluid layout that automatically adjusts to resolutions higher than 1024 x768?</label>
+      </p>
+
+      <noscript>On fail: 6.8 Use a fluid layout that automatically adjusts the page size to monitor resolution settings that are 1024x768 pixels or higher.</noscript>
+      
+      <ul class="rating">
+        <li>Relative importance: 3</li>
+        <li>Strength of evidence: 3</li>
+      </ul>
+
+
+      <p class="checkbox">
+        <input id="6_9" onclick="showInfo('10')" type="checkbox" name="6_9">
+        <label for="6_9">6:9 Might some users encounter "scroll stoppers" that give the false impression of the top or bottom of the page?</label>
+      </p>
+
+      <noscript>On fail: 6.9 Ensure that the location of headings and other page elements does not create the illusion that users have reached the top or bottom of a page when they have not.</noscript>
+      
+      <ul class="rating">
+        <li>Relative importance: 3</li>
+        <li>Strength of evidence: 4</li>
+      </ul>
+
+
+      <p class="checkbox">
+        <input id="6_10" onclick="showInfo('11')" type="checkbox" name="6_10">
+        <label for="6_10">6:10 Are page lengths appropriate? i.e., short for quick browsing, long for uninterrupted reading? (4 reasons for long pages)</label>
+      </p>
+
+      <noscript>On fail: 6.10 Make page-length decisions that support the primary use of the Web page.</noscript>
+      
+      <ul class="rating">
+        <li>Relative importance: 3</li>
+        <li>Strength of evidence: 3</li>
+      </ul>
+
+
+      <p class="checkbox">
+        <input id="6_11" onclick="showInfo('12')" type="checkbox" name="6_11">
+        <label for="6_11">6:11 Do pages used for scanning and searching use moderate white space?</label>
+      </p>
+
+      <noscript>On fail: 6.11 Limit the amount of white space (areas Page Layout without text, graphics, etc.) on pages that are used for scanning and searching.</noscript>
+      
+      <ul class="rating">
+        <li>Relative importance: 3</li>
+        <li>Strength of evidence: 4</li>
+      </ul>
+
+
+      <p class="checkbox">
+        <input id="6_12" onclick="showInfo('13')" type="checkbox" name="6_12">
+        <label for="6_12">6:12 Are line lengths appropriate? Longer for reading speed, shorter for site acceptance...</label>
+      </p>
+
+      <noscript>On fail: 6.12 If reading speed is most important, use longer line lengths (75-100 characters per line). If acceptance of the Web site is most important, use shorter line lengths (fifty characters per line).</noscript>
+      
+      <ul class="rating">
+        <li>Relative importance: 2</li>
+        <li>Strength of evidence: 4</li>
+      </ul>
+
+
+      <p class="checkbox">
+        <input id="6_13" onclick="showInfo('14')" type="checkbox" name="6_13">
+        <label for="6_13">6:13 Are frames used when functions must remain accessible?</label>
+      </p>
+
+      <noscript>On fail: 6.13 Use frames when certain functions must remain visible on the screen as the user accesses other information on the site.</noscript>
+      
+      <ul class="rating">
+        <li>Relative importance: 1</li>
+        <li>Strength of evidence: 4</li>
+      </ul>
+
+      </div>
+
+
+    <div id="resultBox">
+      <label for="adviceText">Rejection-note builder</label>
+      <input name="Reset" type="reset" value="Reset" /><br>
+      <textarea id="adviceText" rows="40" cols="55" readOnly name="adviceText"></textarea>
+    </div>
+  </form>
+
+
+<!--  <div id="resources">
+		links...    
+  </div>
+-->
+
+  <div id="footer">
+    <p>Updated August 20, 2013</p>
+  </div>
+</div>
+</body>
+</html>
