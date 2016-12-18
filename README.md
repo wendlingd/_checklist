@@ -1,13 +1,13 @@
 # Checklist-based web site evaluation
 
-Try this checklist if you're intestested in prototyping how web content review might be supported like two sides of a coin: (1) How/what to test, and (2) How to fix if needed. Would checklists like this one be useful in continuous web optimization?
+Try this checklist if you're intestested in prototyping how web content might be improved if we improve our evaluation tools: (1) How/what to test, and (2) How to fix if needed. Would checklists like this one be useful in continuous web optimization?
     
 #### [Page Layout Checklist (13 items)](pageLayoutChecklist.html)
 
 
 ## About / Recommendations
 
-Teams of web evaluators whose members have varying levels of skill regarding the topic of the checklist, can nonetheless certify standards at an appropriate and precise level of specificity. Clicking the checkbox on a failed item helps generate a to-do list of likewise-specific resources for fixing, when pages need to be turned back to the editor for more work.
+Teams of web evaluators whose members have varying levels of skill regarding the topic of the checklist, can nonetheless certify standards at an appropriate and precise level of specificity. In this JavaScript self-posting form, clicking the checkbox on a failed item helps generate a to-do list of likewise-specific resources for fixing, when pages need to be turned back to the editor for more work.
 
 If the guidelines were stored in a database, this type of checklist would be easy to create and maintain, and there would be fewer accessibility consequences. You could also track top problems and make it a priority to improve those solutions. Database columns to serve out this information might include:
 
